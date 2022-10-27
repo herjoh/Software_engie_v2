@@ -12,7 +12,11 @@ def test_Acceptance_criteria_2_leap_year(input_value):
     assert input_value % 400 == 0
 
 
+def test_Acceptance_criteria_1__for_not_leap_year(input_value):
+    assert input_value % 4 != 0
 
+def test_Acceptance_criteria_2__for_not_leap_year(input_value):
+    assert input_value % 100 != 0 and not input_value % 400 == 0
 
 
 
